@@ -8,8 +8,6 @@ const { check, validationResult } = require('express-validator');
 
 const User = require('../../models/User');
 
-// password ahdf24343 12345678
-
 // @route POST api/users
 // @desc Register user
 // @access Public
