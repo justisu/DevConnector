@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { BrowserRouter as Router, Route, Routes, Outlet } from 'react-router-dom';
+import axios from 'axios';
 import Home from './components/home/index';
 import Navbar from './components/layouts/Navbar';
 import Landing from './components/layouts/Landing';
@@ -22,6 +23,20 @@ import setAuthToken from './utils/setAuthToken';
 if(localStorage.token) {
   setAuthToken(localStorage.token);
 }
+
+const url = `https://mern-devconnector.onrender.com/`;
+const interval = 300000;
+
+function reloadWebsite() {
+  axios.get(url)
+    .then(response => {
+      console.info(`Reloaded at ${new Date().toISOString()}: Status Code ${response.status}`);
+    })
+    .catch(error => {
+      console.error(`Error reloading at ${new Date().toISOString()}:`, error.message);
+    });
+}
+setInterval(reloadWebsite, interval);  
 
 const DevLayout = () => (
   <>
