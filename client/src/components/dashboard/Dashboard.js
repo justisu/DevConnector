@@ -15,7 +15,7 @@ const Dashboard = ({ auth: { user, isAuthenticated, loading: authLoading }, prof
 
 
   if(!isAuthenticated && !authLoading) {
-    return <Navigate to='/login' />
+    return <Navigate to='/dev/login' />
   }
   return (
     loading && profile === null 

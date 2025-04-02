@@ -27,11 +27,11 @@ export default function Home() {
         <div className="bg-light p-4">
           <div className="box space-between desktop-container">
             <div className="font-weight-light" style={{ width: '40%'}}><i class="fa fa-envelope" aria-hidden="true"><span style={{ padding: '5%'}}><small className="text-muted">sudhin.justin@gmail.com</small></span></i></div>
-            <div className="push" style={{ width: '20%' }}><i class="fa fa-phone" aria-hidden="true" style={{ display: 'block' }}><span style={{ padding: '5%'}}><small className="text-muted">630-485-4422</small></span></i></div>
+            <div className="push" style={{ width: '35%' }}><i class="fa fa-phone" aria-hidden="true" style={{ display: 'block' }}><span style={{ padding: '5%'}}><small className="text-muted">630-635-6514 / 630-485-4422</small></span></i></div>
           </div>
           <div className="box mobile-container">
             <div className="font-weight-light"><i class="fa fa-envelope" aria-hidden="true"><span style={{ padding: '5%'}}><small className="text-muted">sudhin.justin@gmail.com</small></span></i></div>
-            <div style={{ paddingTop: '10px' }}><i class="fa fa-phone" aria-hidden="true" style={{ display: 'block' }}><span style={{ padding: '2%'}}><small className="text-muted">630-485-4422</small></span></i></div>
+            <div style={{ paddingTop: '10px' }}><i class="fa fa-phone" aria-hidden="true" style={{ display: 'block' }}><span style={{ padding: '3%'}}><small className="text-muted">630-635-6514 / 630-485-4422</small></span></i></div>
           </div>
         </div> 
         <div className="px-4 py-3">
@@ -50,7 +50,7 @@ export default function Home() {
           <div className="p-4 rounded shadow-sm bg-light">
             <div className="box desktop-container">
               <a href="/dev" className="btn btn-outline-dark btn-sm btn-block" style={{ border: '1px solid', maxWidth: '45%', minHeight: '38px'}}>Dev Connector Demo</a>
-              <a href="/dev" className="btn btn-outline-dark btn-sm btn-block push" style={{ border: '1px solid', maxWidth: '45%', minHeight: '38px', marginTop: '0px'}}>View code in Github</a>
+              <a href="https://github.com/justisu/DevConnector/tree/main" className="btn btn-outline-dark btn-sm btn-block push" style={{ border: '1px solid', maxWidth: '45%', minHeight: '38px', marginTop: '0px'}}>View code in Github</a>
             </div>
             <div className="box mobile-container">
               <a href="/dev" className="btn btn-outline-dark btn-sm btn-block" style={{ border: '1px solid' }}>Dev Connector Demo</a>
@@ -85,8 +85,8 @@ export default function Home() {
           <h5 className="mb-0">Work Experience</h5>
           <div className="p-4 rounded shadow-sm bg-light">
             <div>
-              <div className="box desktop-container">
-                <div className="font-weight-bold mb-0"><strong>Advance Auto Parts(Contracting Position)</strong></div>
+              <div className="box desktop-container" style={{ padding: '0px' }}>
+                <div className="font-weight-bold"><strong>Advance Auto Parts(Contracting Position)</strong></div>
                 <div className="push font-weight-normal mb-0">Jan 2017 - Present</div>
               </div>
               <div className="box mobile-container">
@@ -117,9 +117,13 @@ export default function Home() {
                 </p>
               </div>
               <div>
-                <div className="box">
-                  <div className="font-weight-bold mb-0"><strong>BlueSky Technology Partners(Contracting Position)</strong></div>
+                <div className="box desktop-container" style={{ padding: '0px' }}>
+                  <div className="font-weight-bold mb-0"><strong>BlueSky Technology Partners (Contracting Position)</strong></div>
                   <div className="push font-weight-normal mb-0">Apr 2010 - Dec 2016</div>
+                </div>
+                <div className="box mobile-container">
+                  <div className="font-weight-bold mb-0"><strong>BlueSky Technology Partners (Contracting Position)</strong></div>
+                  <div className="font-weight-normal mb-0" style={{ paddingTop: '5px' }}>Apr 2010 - Dec 2016</div>
                 </div>
                 <div>
                   <p className="font-italic mb-0" style={{ marginTop: '5px'}}><strong>Software Application Developer</strong></p>
@@ -145,9 +149,13 @@ export default function Home() {
                 </div>
               </div>
               <div>
-                <div className="box">
-                  <div className="font-weight-bold mb-0"><strong>Sears Holdings Corporation(Contracting Position)</strong></div>
+                <div className="box desktop-container" style={{ padding: '0px' }}>
+                  <div className="font-weight-bold mb-0"><strong>Sears Holdings Corporation (Contracting Position)</strong></div>
                   <div className="push font-weight-normal mb-0">Nov 2006 - Mar 2010</div>
+                </div>
+                <div className="box mobile-container">
+                  <div className="font-weight-bold mb-0"><strong>Sears Holdings Corporation (Contracting Position)</strong></div>
+                  <div className="font-weight-normal mb-0" style={{ paddingTop: '5px' }}>Nov 2006 - Mar 2010</div>
                 </div>
                 <div>
                   <p className="font-italic mb-0" style={{ marginTop: '5px'}}><strong>Project Manager / Technology Lead</strong></p>
