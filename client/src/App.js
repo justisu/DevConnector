@@ -15,6 +15,7 @@ import AddEducation from './components/profile-form/AddEducation';
 import Login from './components/auth/Login';
 import Register from './components/auth/Register';
 import Posts from './components/posts/Posts';
+import Post from './components/post/Post';
 import { Provider } from 'react-redux';
 import store from './store';
 import { loadUser } from './actions/auth';
@@ -80,6 +81,7 @@ const App = () => {
             <Route exact path="/dev/add-experience" element={ <AddExperience /> } />
             <Route exact path="/dev/add-education" element={ <AddEducation /> } />
             <Route exact path="/dev/posts" element={ <Posts /> } />
+            <Route exact path="/dev/posts/:id" element={ <Post /> } />
           </Route>
         </Routes>
       </Router>

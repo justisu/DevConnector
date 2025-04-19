@@ -27,7 +27,7 @@ export default function Home() {
         <div className="bg-light p-4">
           <div className="box space-between desktop-container">
             <div className="font-weight-light" style={{ width: '40%'}}><i class="fa fa-envelope" aria-hidden="true"><span style={{ padding: '5%'}}><small className="text-muted">sudhin.justin@gmail.com</small></span></i></div>
-            <div className="push" style={{ width: '35%' }}><i class="fa fa-phone" aria-hidden="true" style={{ display: 'block' }}><span style={{ padding: '5%'}}><small className="text-muted">630-635-6514 / 630-485-4422</small></span></i></div>
+            <div className="push" style={{ width: '40%' }}><i class="fa fa-phone" aria-hidden="true" style={{ display: 'block' }}><span style={{ padding: '5%'}}><small className="text-muted">630-635-6514 / 630-485-4422</small></span></i></div>
           </div>
           <div className="box mobile-container">
             <div className="font-weight-light"><i class="fa fa-envelope" aria-hidden="true"><span style={{ padding: '5%'}}><small className="text-muted">sudhin.justin@gmail.com</small></span></i></div>

@@ -228,22 +228,22 @@ img {
   height: 100%;
 }
 
-.form .form-group {
+.form-app .form-app-group {
   margin: 1.2rem 0;
 }
 
-.form .form-text {
+.form-app .form-app-text {
   display: block;
   margin-top: 0.3rem;
   color: #888;
 }
 
-.form input[type='text'],
-.form input[type='email'],
-.form input[type='password'],
-.form input[type='date'],
-.form select,
-.form textarea {
+.form-app input[type='text'],
+.form-app input[type='email'],
+.form-app input[type='password'],
+.form-app input[type='date'],
+.form-app select,
+.form-app textarea {
   display: block;
   width: 100%;
   padding: 0.4rem;
@@ -251,33 +251,33 @@ img {
   border: 1px solid #ccc;
 }
 
-.form input[type='submit'],
+.form-app input[type='submit'],
 button {
   font: inherit;
 }
 
-.form .social-input {
+.form-app .social-input {
   display: flex;
 }
 
-.form .social-input i {
+.form-app .social-input i {
   padding: 0.5rem;
   width: 4rem;
 }
 
-.form .social-input i.fa-twitter {
+.form-app .social-input i.fa-twitter {
   color: #38a1f3;
 }
-.form .social-input i.fa-facebook {
+.form-app .social-input i.fa-facebook {
   color: #3b5998;
 }
-.form .social-input i.fa-instagram {
+.form-app .social-input i.fa-instagram {
   color: #3f729b;
 }
-.form .social-input i.fa-youtube {
+.form-app .social-input i.fa-youtube {
   color: #c4302b;
 }
-.form .social-input i.fa-linkedin {
+.form-app .social-input i.fa-linkedin {
   color: #0077b5;
 }
 
@@ -442,7 +442,7 @@ button {
   flex-basis: 20%;
 }
 
-.post-form .post-form-header {
+.post-form-app .post-form-header {
   background: var(--primary-color);
   padding: 0.5rem;
 }

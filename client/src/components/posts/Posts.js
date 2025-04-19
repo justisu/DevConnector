@@ -2,8 +2,10 @@ import React, { Fragment, useEffect } from 'react'
 import PropTypes from 'prop-types';
 import { connect} from 'react-redux'
 import Spinner from '../layouts/Spinner'
-import { getPosts } from '../../actions/post';
 import PostItem from './PostItem';
+import PostForm from './PostForm';
+import { getPosts } from '../../actions/post';
+
 
 const Posts = ({ getPosts, post: { posts, loading } }) => {
 
@@ -18,6 +20,7 @@ const Posts = ({ getPosts, post: { posts, loading } }) => {
       <p className="lead">
         <i className="ti.fas.fa-user">Welcome to the community</i>
       </p>
+      <PostForm />
       { posts.length > 0 ? (
         <div className="posts">
           {posts.map(post => (
