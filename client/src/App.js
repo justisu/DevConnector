@@ -16,6 +16,7 @@ import Login from './components/auth/Login';
 import Register from './components/auth/Register';
 import Posts from './components/posts/Posts';
 import Post from './components/post/Post';
+import JsonFormatter from './components/format/JsonFormatter';
 import { Provider } from 'react-redux';
 import store from './store';
 import { loadUser } from './actions/auth';
@@ -82,6 +83,7 @@ const App = () => {
             <Route exact path="/dev/add-education" element={ <AddEducation /> } />
             <Route exact path="/dev/posts" element={ <Posts /> } />
             <Route exact path="/dev/posts/:id" element={ <Post /> } />
+            <Route exact path="/dev/formatter" element={ <JsonFormatter /> } />
           </Route>
         </Routes>
       </Router>

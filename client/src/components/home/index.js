@@ -57,6 +57,16 @@ export default function Home() {
               <a href="https://github.com/justisu/DevConnector/tree/main" className="btn btn-outline-dark btn-sm btn-block" style={{ border: '1px solid', marginTop: '20px'}}>View code in Github</a>
             </div>            
           </div>
+          <div className="p-4 rounded shadow-sm bg-light" style={{ marginTop: '2%'}}>
+            <div className="box desktop-container">
+              <a href="/dev/formatter" className="btn btn-outline-dark btn-sm btn-block" style={{ border: '1px solid', maxWidth: '45%', minHeight: '38px'}}>JSON Formatter</a>
+              <a href="https://github.com/justisu/DevConnector/tree/main" className="btn btn-outline-dark btn-sm btn-block push" style={{ border: '1px solid', maxWidth: '45%', minHeight: '38px', marginTop: '0px'}}>View code in Github</a>
+            </div>
+            <div className="box mobile-container">
+              <a href="/dev" className="btn btn-outline-dark btn-sm btn-block" style={{ border: '1px solid' }}>Dev Connector Demo</a>
+              <a href="https://github.com/justisu/DevConnector/tree/main" className="btn btn-outline-dark btn-sm btn-block" style={{ border: '1px solid', marginTop: '20px'}}>View code in Github</a>
+            </div>            
+          </div>
         </div>
         <div className="px-4 py-3">
           <h5 className="mb-0">Skills</h5>

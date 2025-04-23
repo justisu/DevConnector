@@ -698,6 +698,13 @@ button {
     visibility: hidden;
     max-height: 15px;
   }
+  .formatter-desktop-container {
+    display: none;
+  }
+  .formatter-mobile-container {
+    flex-direction: column;
+    display: 'flex',
+  }
 }
 
 @media (min-width: 901px) {
@@ -708,5 +715,12 @@ button {
   }
   .mobile-container {
     visibility: hidden;
+  }
+  .formatter-desktop-container {
+    flex-direction: row;
+    display: 'flex',
+  }
+  .formatter-mobile-container {
+    display: none;
   }
 }
