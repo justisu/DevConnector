@@ -42,28 +42,28 @@ const AddEducation = ({ addEducation, navigate }) => {
   };
   return (
     <Fragment>
-      <h1 class="large text-primary-app">
+      <h1 className="large text-primary-app">
        Add Your Education
       </h1>
-      <p class="lead-app">
-        <i class="fas fa-code-branch"></i> Add any school or bootcamps that you have had in the past
+      <p className="lead-app">
+        <i className="fas fa-code-branch"></i> Add any school or bootcamps that you have had in the past
       </p>
       <small>* = required field</small>
-      <form class="form" onSubmit={e => onSubmit(e)}>
-        <div class="form-group">
+      <form className="form" onSubmit={e => onSubmit(e)}>
+        <div className="form-group">
           <input type="text" placeholder="* School or Bootcamp" name="school" required onChange={onChange} value={school}/>
         </div>
-        <div class="form-group">
+        <div className="form-group">
           <input type="text" placeholder="* Degree or Certifcate" name="degree" required onChange={e => onChange(e)} value={degree} />
         </div>
-        <div class="form-group">
+        <div className="form-group">
           <input type="text" placeholder="Filed Of Study" name="fieldofstudy" onChange={e => onChange(e)} value={fieldofstudy} />
         </div>
-        <div class="form-group">
+        <div className="form-group">
           <h4>From Date</h4>
           <input type="date" name="from" onChange={e => onChange(e)} value={from} />
         </div>
-         <div class="form-group">
+         <div className="form-group">
           <p><input type="checkbox" name="current" checked={current} onChange={e => {
             setFormData({
               ...formData,
@@ -72,11 +72,11 @@ const AddEducation = ({ addEducation, navigate }) => {
             toggleDisabled(!toDateDisabled);
           }} value={current} /> {' '} Current School</p>
         </div>
-        <div class="form-group">
+        <div className="form-group">
           <h4>To Date</h4>
           <input type="date" name="to" disabled={toDateDisabled ? 'disabled' : ''} onChange={e => onChange(e)} value={to} />
         </div>
-        <div class="form-group">
+        <div className="form-group">
           <textarea
             name="description"
             cols="30"
@@ -86,8 +86,8 @@ const AddEducation = ({ addEducation, navigate }) => {
             value={description}
           ></textarea>
         </div>
-        <input type="submit" class="btn btn-primary-app my-1" />
-        <Link to="/dev/dashboard" class="btn btn-light my-1">Go Back</Link>
+        <input type="submit" className="btn btn-primary-app my-1" />
+        <Link to="/dev/dashboard" className="btn btn-light my-1">Go Back</Link>
       </form>
     </Fragment>
   )
