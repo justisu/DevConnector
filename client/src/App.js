@@ -27,7 +27,7 @@ if(localStorage.token) {
 }
 
 const url = `https://mern-devconnector.onrender.com/`;
-const interval = 300000;
+const interval = 120000;
 
 function reloadWebsite() {
   axios.get(url)
@@ -75,6 +75,7 @@ const App = () => {
             <Route path="/dev/register" element={ <Register /> } />
             <Route path="/dev/login" element={ <Login /> } />
             <Route path="/dev/profiles" element={ <Profiles /> } />
+            
             <Route path="/dev/dashboard" element={ <Dashboard /> } />
             <Route path="/dev/profile/:id" element={ <Profile /> } />
             <Route exact path="/dev/create-profile" element={ <CreateProfile /> } />
